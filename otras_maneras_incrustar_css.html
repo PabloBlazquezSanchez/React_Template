@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Otras maneras de incrustrar CSS</title>
+        <link rel="stylesheet" href="estilos_otras_maneras_css.css">
+    </head>
+    <body>
+        <h1>Otras maneras de incrustrar CSS</h1>
+        <h2>Usar estilos de CSS en línea</h2>
+        <p>Esta es una manera un tanto básica porque solo aplicas el estilo a una etiqueta. <br>
+            El código escrito quedará así: &ltetiqueta style="estilo"&gt&lt/etiqueta&gt. <br>
+            Ejemplo:
+        </p>
+        <div style="width: 65%; margin: auto; background-color: darksalmon; border: 5px groove lightseagreen; padding: 10px; text-align: justify;">
+            <h3 style="color: rgb(170, 255, 0);">¿Cómo funciona Raspberry Pi?</h3>
+            <p>La Raspberry PI <span style="font-weight: bold; font-style: italic; text-decoration: underline;">no tiene interruptor para encender o apagar</span>.
+                Para ponerlo en marcha tenemos que conectar periféricos de entrada y salida para poder interactuar como una pantalla, un ratón y un teclado 
+                y <span style="color: red;">grabar un sistema operativo para Raspberry Pi en la tarjeta SD</span>. Ya solo queda conectarlo a la corriente y estamos listos para funcionar.
+            </p>
+            <h3 style="color: rgb(170, 255, 0);">¿Qué puedo hacer con una Raspberry PI?</h3>
+            <p>Existen gran cantidad de cosas que podemos hacer con una Raspberry PI, de las cuales destacamos las siguentes 4:
+                <ul>
+                    <li>Como <span style="text-decoration: underline;">media center</span>, o lo que es lo mismo, para convertir una televisión en una smart TV.</li>
+                    <li>Para <span style="text-decoration: underline;">emular una videoconsola retro</span> jugando a grandes clásicos con RetroPie instalado.</li>
+                    <li>Como <span style="text-decoration: underline;">ordenador</span> con sistema Linux, a través de distribuciones como Ubuntu, Raspbian(Debian) o Pidora (Fedora).</li>
+                    <li><span style="text-decoration: underline;">Domótica</span>, con <a href="https://docs.microsoft.com/es-es/windows/iot-core/windows-iot" target="_blank">Windows 10 IOT Core</a>, lo que permite hacer de nuestra casa un espacio un poco más inteligente con proyectos como estaciones meteorológicas o hubs inteligentes.</li>
+                </ul>
+                Para poder realizar todo eso, es necesario <span style="color: blue; font-weight: bold;">instalar un SO en la SD</span>.
+            </p>
+        </div>
+        <h2>Usar hojas de estilo externas</h2>
+        <p>Muchos usuarios profesionales emplean esto ya que luego pueden usarlo de plantilla y no tienen que hacer copia y pega. <br>
+            Para incrustrar los estilos escritos en una hoja externa nos vamos a la etiqueta head y escribimos: &ltlink rel="stylesheet" href="ruta de archivo.css"&gt. <br>
+            Ejemplo:
+        </p>
+        <div class="div-hoja-externa">
+            <h3 class="h3-hoja-externa">Tasa de venta desde 2015 hasta 2018</h3>
+            <p>De acuerdo a la Raspberry Pi Foundation, más de cinco millones de Raspberry Pi fueron vendidas en febrero de 2015, haciéndola la computadora
+                británica mejor vendida. En noviembre de 2016 vendieron 11 millones de unidades​, y 12.5 millones en marzo de 2017, haciéndolo el tercer mejor 
+                vendido "computador de propósito general". En julio de 2017, las ventas alcanzaron cerca de 15 millones13​. En marzo de 2018, las ventas alcanzaron 19 millones.
+            </p>
+            <h3 class="h3-hoja-externa">Usos</h3>
+            <p>
+                <ul class="ul-hoja-externa">
+                    <li>En enero de 2012, encuestas hechas en el Reino Unido acerca de la penetración en las aulas de Raspberry Pi concluyeron que <span class="span1-li1">por cada placa que había en un colegio público, 
+                        había cinco en colegios privados</span>. Por ello se espera que en un futuro empresas patrocinen la adquisición de placas en colegios públicos.
+                    </li>
+                    <li>En marzo de 2012 el CEO de Premier Farnell declaró que el gobierno de un país de medio oriente expresó interés en <span class="span1-li2">proveer una placa a cada chica estudiante</span>, 
+                        con el objetivo de mejorar sus expectativas de empleo en el futuro.
+                    </li>
+                    <li>A finales de enero de 2013, se dio a conocer que Google, junto con la ayuda de otros 6 socios, <span class="span1-li3">repartiría 15.000 placas entre estudiantes del 
+                        Reino Unido que mostraran motivación por la informática</span>.
+                    </li>
+                    <li>En junio de 2014, la empresa TECHBASE, fabricante polaco de automatización industrial diseñó el primer ordenador industrial del mundo basado en el Compute module de Rapberry Pi, 
+                        llamado ModBerry. El dispositivo tiene numerosas interfaces, especialmente puertos seriales RS-485/232, entradas y salidas digitales y analógicas, interfaces CAN y 1-Wire, 
+                        los cuales son ampliamente utilizados en la industria de automatización. El diseño permite el uso del Compute Module en entornos industriales exigentes, lo que lleva a la conclusión 
+                        de que Raspberry Pi no se limita solamente a proyectos de hogar y ciencias, sino que puede ser ampliamente utilizado como solución IoT de manera industrial y alcanzar los objetivos de la Industria 4.0.
+                    </li>
+                    <li>En noviembre de 2018 se comenzó a <sapn class="span1-li4">adaptar las Raspberry Pi Zero W</sapn> dentro de las cavidades de bahía extraíble de la mayoría de los ordenadores portátiles por medio de una adaptador plástico impreso en 3D.</li>
+                </ul>
+            </p>
+        </div>
+    </body>
+</html>

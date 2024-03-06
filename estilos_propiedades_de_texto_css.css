@@ -1,0 +1,31 @@
+#carta{
+    font-family: sans-serif;
+}
+.tabla{
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    width: 20%;
+    display: table;
+    text-align: center;
+}
+tr{
+    border: 1px solid black;
+}
+.italic{
+    font-style: italic;
+}
+.interlineado{
+    line-height: 30px;
+}
+.alineacion{
+    text-align: center;
+}
+h1{
+    color: red;
+    background-color: rgb(55, 193, 78);
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    font-size: 45px;
+}

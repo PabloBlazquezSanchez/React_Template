@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Más selectores de CSS</title>
+        <link rel="stylesheet" href="estilos_mas_selectores_css.css">
+    </head>
+    <body>
+        <h1>Más Selectores de CSS</h1>
+        <h2>Más de una clase en una misma etiqueta de HTML</h2>
+        <p>Empleamos esto cuando a un texto le queremos dar muchos estilos que están en clases distintas. <br>
+            Ejemplo: <br>
+        </p>
+        <p class="texto_centrado interlineado fuente_texto color_texto">La Raspberry PI 2 modelo B, lanzada en 2014, es el primer modelo que no incluye el mismo <br>
+            procesador usado en los tres anteriores (Raspberry PI 1 modelo A, modelo B y modelo B+): <br>
+            se sustituye por uno de la misma marca, pero de modelo BCM2836. Pasa de ser un núcleo a cuatro, <br>
+            y de 700MHz a 900MHz. Emplea la misma gráfica, dobla la cantidad de memoria RAM, pasando de 512MB a 1GB <br>
+            aproximadamente. Esta memoria está compartida con la gráfica. También incluye 40 pines GPIO, y mantiene <br>
+            los cuatro puertos USB. Suprime la conexión RCA.
+        </p>
+        <h2>Combinación de clases y selectores</h2>
+        <p>Usamos esto cuando tenemos dos etiquetas diferentes con la misma clase y queremos que, con esa misma <br>
+            clase, aplicar estilos a una etiqueta y a otra no. Ejemplo:
+        </p>
+        <div class="div_clases_selectores">
+            <h3>Raspberry Pi 4 modelo B</h3>
+            <p>Fue anunciada en junio de 2019. Los <strong class="negrita">puertos HDMI</strong> de tamaño completo se cambian por dos <span class="negrita">puertos microHDMI.</span> <br>
+                Cuenta con la capacidad de manejar una pantalla a 4K a 60 Hz, o dos pantallas 4K a 30 Hz. Se ha incluido por <br>
+                primera vez USB 3.0, y el puerto Ethernet ya no está limitado a 300 Mbps. Tiene un procesador Broadcom nuevo <br>
+                hasta tres veces más eficiente que el anterior.
+            </p>
+            <img class="foto2_clases_selectores" src="imagenes/clases_selectores_2.PNG" alt="Combinación de clases y selectores 2">
+            <img class="foto1_clases_selectores" src="imagenes/clases_selectores_1.PNG" alt="Combinación de clases y selectores 1">
+        </div>
+        <h2>Selectores descendentes</h2>
+        <p>Empleamos esto cuando tenemos la misma clase dentro de la misma etiqueta en dos sitios distintos. Por ejemplo, <br>
+            tenemos en una lista desordenada una etiqueta span con una clase, y luego dentro de una etiqueta de párrafo otra <br>
+            etiqueta span con esa misma clase, y queremos que tengan mismos y diferentes estilos. Ejemplo:
+        </p>
+        <div class="div-selectores-descendientes">
+            <h3>Sistemas operativos compatibles con <em class="raspberry-class">Raspberry PI</em></h3>
+            <ul>
+                <li>Android</li>
+                <li>Arch Linux ARM</li>
+                <li>Debian Whezzy Soft-Float, versión de <span class="select_debian">Debian</span> sin soporte para coma flotante por hardware</li>
+                <li>DietPi</li>
+                <li>Firefox OS</li>
+            </ul>
+            <p>El <em class="raspberry-class">Raspberry PI</em> usa principalmente sistemas operativos GNU/Linux. Raspbian, una distribución derivada de <br>
+                <span class="select_debian">Debian</span> que está optimizada para el hardware de Raspberry PI, se lanzó durante julio de 2012 y es la distribución <br>
+                recomendada por la fundación para iniciarse.<br>
+            </p>
+            <img class="foto1-selectores-descendientes" src="imagenes/selectores_descendientes_1.PNG" alt="Selectores descendentes 1">
+            <img class="foto2-selectores-descendientes" src="imagenes/selectores_descendientes_2.PNG" alt="Selectores descendentes 2" width="225">
+        </div>
+        <h2>Agrupación de selectores de CSS</h2>
+        <p>Esto sirve para cuando queremos aplicar los mismos estilos a dos etiquetas diferentes sin tener que usar clases. <br>
+            Para que funcione, debemos escribir en style lo siguiente: <span style="border: 3px solid red; color: blue; background-color: lightcyan; font-family: monospace;">etiqueta, etiqueta</span>. <br>
+            Ejemplo:
+        </p>
+        <div>
+            <h3 class="h3-selectores-agrupados">Raspberry PI Zero</h3>
+            <p>Aparte de los modelos normales, la Fundación Raspberry también ha sacado otra gama de placas denominadas Raspberry Pi Zero. <br>
+                Estas son mucho más pequeñas y menos potentes que sus hermanas, pero es precisamente su atractivo, menos gasto y un precio mucho menor.
+            </p>
+            <h4 class="h4-selectores-agrupados">PI Zero</h4>
+            <p>Es un 40% más potente que el primer modelo de Raspberry. Tiene un microprocesador Broadcom BCM2835, que funciona a 1GHz con un solo núcleo. <br>
+                Posee 512MB de RAM, y comparte la gráfica VideoCore IV. Debido a su tamaño sustituye el puerto HDMI por MiniHDMI, manteniendo así las prestaciones. <br>
+                Tampoco usa USB estándar, sino que tiene dos MicroUSB, uno de alimentación y otro de datos.
+            </p>
+            <h4 class="h4-selectores-agrupados">PI Zero W</h4>
+            <p>Es la sucesora de la Pi Zero, la W es por Wireless, ya que la única novedad de esta placa con respecto a su antecesora es la inclusión de Wi-Fi y Bluetooth, <br>
+                el precio asciende a once dólares.
+            </p>
+            <h4 class="h4-selectores-agrupados">PI Zero WH</h4>
+            <p>Las especificaciones siguen siendo las mismas que la Zero W, aparte de la inclusión de un conector presoldado GPIO de 40 pines.</p>
+        </div>
+        <h2>Pseudo-clases dinámicas</h2>
+        <p>Esto se usa para definirle un estado especial a un elemento ó elementos con clases, id o solo escribiendo la etiqueta. <br>
+            Podemos definir numerosos estados, de los cuales podemos destacar 3:
+            <ul>
+                <li>Aplicar estilos a un elemento cuando pasamos el cursor del ratón sobre él.</li>
+                <li>Hacer que los enlaces tengan un estilo cuando no se ha visitado y otro estilo cuando se ha visitado.</li>
+                <li>Aplicar estilos a un elemento cuando lo enfocamos.</li>
+            </ul>
+            También podemos hacer que al pasar por encima de un texto aparezca otro justo debajo. <br>
+            Ejemplo:
+        </p>
+        <div>
+            <h3>Accesorios para Raspberry PI</h3>
+            <div class="camara">
+                <h4 class="hover">Cámara de vídeo</h4>
+                <p class="div_camara_video"><img style="float: left;" src="imagenes/camara_raspberry_pi.jpg" alt="Cámara de la Raspberry PI" width="200">
+                    En mayo de 2012, la fundación informó de que se estaba experimentando con un módulo de cámara para Raspberry Pi, 
+                    el prototipo usaba un sensor de 14 megapíxeles, y se conectaba al puerto CSI de la placa mediante un cable plano flexible. 
+                    El prototipo final constaría de un sensor de 5 megapíxeles y podría grabar vídeos a !080p y 30fps. Las dimensiones del módulo 
+                    son 25 x 20 x 9 mm, y para ponerlo a funcionar, se tiene que activar en el menú raspi-config de Raspbian.
+                </p>
+            </div>
+            <div class="reloj">
+                <h4 class="hover">Reloj</h4>
+                <p class="div_reloj"><img style="float: left;" src="imagenes/reloj_raspberry_pi.jpg" alt="Módulo de Reloj para Raspberry PI" width="200">
+                    los Raspberry Pi no poseen un reloj interno que conserve la hora y fecha al ser apagados: para ello cada sistema 
+                    operativo hace uso del Protocolo de Tiempo de Red, de lo contrario la fecha mínima por defecto almacenada es 30 de noviembre de 1999. 
+                    Por ello otros fabricantes han diseñado pequeñas tarjetas con un chip DS1302 y una batería de litio modelo CR2032 
+                    que conectan por medio de puerto GPIO y con la carga previa en memoria del software controlador para dicho dispositivo consultan la fecha 
+                    y hora al arrancar y luego cada cierto tiempo durante su funcionamiento.
+                </p>
+            </div>
+            <div class="otros">
+                <h4 class="hover">Otros accesorios</h4>
+                <p class="div_otros_accesorios"><img style="float: left;" src="imagenes/gertboard_raspberry_pi.jpg" alt="Gertboard para Raspberry PI" width="200">
+                    Por ejemplo la Gertboard, que ha sido creada con propósito educativo, sirve para hacer uso del puerto GPIO y poder interactuar con leds, 
+                    interruptores, señales analógicas, sensores, y otros dispositivos. También incluye un controlador opcional para Arduino para poder interactuar con el Raspberry Pi.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

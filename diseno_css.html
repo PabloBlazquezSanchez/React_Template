@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Diseño en CSS</title>
+        <link rel="stylesheet" href="estilos_en_diseno_en_css.css">
+    </head>
+    <body>
+        <h1>Diseño en CSS</h1>
+        <h2>Agrupación de elementos</h2>
+        <p>Hay dos maneras de agrupar los elementos en css: en línea o en bloques.<br>
+            Para agrupar los elementos en línea empleamos el comano span y <br>
+            y para agrupar los elementos en bloques usamos el comando div.<br>
+            <span style="text-decoration: underline; font-weight: bold;">Ejemplos del uso de span:</span> <br>
+            La falta de descendencia directa a la muerte de Carlos II provocó un conflicto<br>
+            entre las potencias partidarias de <span class="span_ejemplo">Felipe de Anjou</span> (nieto de Luis XIV de<br>
+            Francia) y las del candidato austriaco <span class="span_ejemplo">Carlos de Habsburgo</span>, temerosas de una<br>
+            poderosa alianza franco-española.<br>
+            <img src="imagenes/span_ejemplo.PNG" alt="Ejemplo del comando span" width="400"><br>
+            <img src="imagenes/span_ejemplo_2.PNG" alt="Ejemplo del comando span" width="400"><br>
+            <span style="text-decoration: underline; font-weight: bold;">Ejemplo del uso de div:</span><br>
+            <img src="imagenes/div_ejemplo.PNG" alt="Ejemplo del comando div" width="750"><br>
+            <img src="imagenes/div_ejemplo_2.PNG" alt="Ejemplo del comando div" width="500">
+        </p>
+        <div class="ejemplo_div">
+            <p>Las Cortes también vieron su influencia rebajada. Las Cortes asumen teóricamente <br>
+                la representación del reino frente al soberano. Como su misión fundamental es la <br>
+                de consentir el servicio, es decir, votar los impuestos necesarios a la vida del <br>
+                Estado, la nobleza y el clero se desatendieron su representación que quedó en <br>
+                manos de los procuradores de las ciudades que, en teoría, llevan la voz de los <br>
+                pecheros.
+            </p>
+            <p>Las Cortes de la Corona de Aragón que se reúnen por reinos separados: Aragón, <br>
+                Cataluña y Valencia, también fueron desprovistas de su poder.
+            </p>
+        </div>
+        <h2>Overflow</h2>
+        <p>Empleamos este comando le usamos cuando al haber modificado la anchura y altura de un atributo, <br>
+            queremos que quede dentro del espacio. Ejemplo: <br>
+        </p>
+        <p class="ejemplo_overflow">
+            La crisis demográfica afectó de muy diversa manera al extenso territorio <br>
+            de la Corona de Castilla. Se dejó sentir menos en Galicia, Asturias y País <br>
+            Vasco, y mucho más en los territorios recién conquistados y más <br>
+            densamente poblados: Valles del Guadiana y Guadalquivir, así como los <br>
+            territorios castellanos de la costa mediterránea. Se calcula un descenso de <br>
+            población de un 25 %, aunque la recuperación demográfica hizo que <br>
+            Castilla entrara en un proceso expansionista que sentó una de las bases de <br>
+            su potencial en el inicio de la Edad Moderna.
+        </p>
+        <h2>Box model</h2>
+        <p>El modelo de caja consiste en emplear los comandos de estilo margin, <br>
+            border y pading para tenerlo a tu gusto. Ejemplo: <br>
+            <img src="imagenes/modelo_caja.png" alt="Modelo de Caja" width="350"><br>
+            Margin es el espacio que hay entre la pared de la página, otro contenido cualquiera y <br>
+            el borde del contenido.<br>
+            Border es la separación entre el espacio de la página y el contenido.<br>
+            Padding es el relleno en el interior de los bordes, es decir, <br>
+            el espacio entre los bordes y el texto.
+        </p>
+        <div class="modelo_caja">
+        <p><img id="modelo_caja_imagen" src="imagenes/raspberry_foto.jpg" alt="Foto de la Raspberry PI 3 model b" width="150">
+            La Raspberry Pi es una serie de ordenadores de placa reducida, 
+            ordenadores de placa única u ordenadores de placa simple de bajo coste desarrollado 
+            en el Reino Unido por la Raspberry Pi Foundation, con el objetivo de poner en manos 
+            de las personas de todo el mundo el poder de la informática y la creación digital.
+        </p>
+        </div>
+        <h2>Positioning: relative, absolute, fixed y z-index</h2>
+        <p>El posicionamiento sirve para colocar los objetos de la página. <br>
+            Un elemento con posición relativa está posicionado en relación con su posición normal.<br>
+            Ejemplo:
+        </p>
+        <div id="posicion_relativa">
+            <p>La organización detrás de la Raspberry Pi consiste en dos brazos. Los primeros modelos fueron desarrollados por la Raspberry Pi Foundation. <br>
+                Después de que la Raspberry Pi 1 Modelo B fuese lanzado, la fundación creó Raspberry Pi Trading, con Eben Upton como CEO, para desarrollar <br>
+                el tercer modelo, el Raspberry Pi Modelo 1 B+.
+            </p>
+            <p>Raspberry Pi Trading es responsable de desarrollar la tecnología, mientras que la fundación es una caridad educativa que <br>
+                tiene como objetivo promocionar la enseñanza de informática en escuelas y países en desarrollo.
+            </p>
+        </div>
+        <p>Un elemento con posición absoluta está posicionado en relación con el antecesor posicionado más cercano.
+            Ejemplo:
+        </p>
+        <div class="posicion_absoluta-relativa">
+            <p>En el 2006, los primeros diseños de Raspberry Pi se basaban en el microcontrolador Atmel ATmega644.<br>
+                Sus esquemas y el diseño del circuito impreso están disponibles para su descarga pública.<br>
+            </p>
+            <div class="posicion_absoluta">
+                <p>En mayo de 2009, la fundación Raspberry Pi fue fundada en Caldecote, South Cambridgeshire, Reino Unido <br>
+                    como una asociación caritativa que es regulada por la comisión de caridad de Inglaterra y Gales.
+                </p>
+            </div>
+        </div>
+        <p>Un elemento con posición fija está posicionado en relación con la ventana gráfica, <br>
+            lo que significa que siempre permanece en el mismo lugar incluso si se desplaza la página. <br>
+            Ejemplo:
+        </p>
+        <div class="posicion_fija">
+            <img src="imagenes/raspberry_z_index_3.png" alt="Logo de Raspberry" width="100">
+        </div>
+        <p>El comando z-index se emplea para superponer objetos, es decir, poner objetos encima o debajo de otros. <br>
+            Esto se ve mejor en un ejemplo con imágenes. <br>
+            <div class="z_index_1">
+                <img src="imagenes/raspberry_z_index_2.png" alt="Foto 2" width="30%"><br>
+                <div class="z_index_2"><img src="imagenes/raspberry_z_index_3.png" alt="Foto 3" width="20%"></div>
+            </div>
+        </p>
+        <h2 style="position: static;">Float and clear</h2>
+        <p>La propiedad float, como su propio nombre indica, sirve para hacer flotar un objeto, 
+            ya sea a la izquierda o a la derecha. Ejemplo: <br>
+        </p>
+        <div id="float">
+            <img id="float_left" src="imagenes/raspberrypi_moldel_a.jpg" alt="Raspberry PI Modelo A" width="200">
+            <p>Este fue el primer modelo de Raspberry, sus ventas comenzaron en el año 2012. Carecía de puerto Ethernet, 
+                por lo que para su conexión a Internet requería de un adaptador Wi-Fi por USB. Poseía 26 conectores GPIO, 
+                salida de vídeo via HDMI y Video RCA, un conector Jack de 3.5 milímetros, un único conector USB,
+                MicroUSB (De alimentación) y un conector de cámara.
+            </p>
+        </div>
+        <p>La propiedad clear sirve para especificar qué elementos pueden flotar junto al elemento <br>
+            con el comando clear. Ejemplo:
+        </p>
+        <div id="clear">
+            <img style="float: left; margin-right: 5px; border: 3px solid lawngreen; border-radius: 10px;" src="imagenes/raspberry_pi_alfa.jpg" alt="Raspberry Pi Alfa" width="200">
+            <p id="texto_clear">En agosto de 2011, se fabricaron placas alfa, con las mismas características que el modelo B, 
+                pero eran un poco más grandes para integrar bien unas interfaces para depuración. En algunas demostraciones 
+                se podía ver la placa ejecutando el escritorio LXDE en Debian. En octubre del mismo año, el logotipo se 
+                selecionó entre varios diseños por miembros de la comunidad.
+            </p>
+            <p style="clear: both;">La placa alfa, cuya foto es la izquierda, presenta una construcción diferente de las posteriores placas beta y finales.</p>
+        </div>
+    </body>
+</html>

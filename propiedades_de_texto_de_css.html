@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Propiedades de Texto de CSS</title>
+        <link rel="stylesheet" href="estilos_propiedades_de_texto_css.css">
+    </head>
+    <body>
+        <h1>Propiedades de Texto de CSS</h1>
+        <h2>Generic font family</h2>
+        <p>Cuando hablamos de font family nos referimos a la fuente de texto, es decir, <br>
+            el tipo de letra que vamos a emplear en el texto. Serif, monospace son un tipo de estos.<br>
+            Ejemplo: <span id="carta">Leucocitos</span><br>
+            El comando empleado es deducible a partir del título de este punto: font-family: sans-serif;
+        </p>
+        <h2>Specific font family</h2>
+        <p>La definición que le podemos dar a esto es casi igual, excepto que esto es más específico. <br>
+            Times New Roman es una fuente de la familia genérica Serif.
+        </p>
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>Generic<br>font family</th>
+                    <th>Specific<br>font family</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Serif</td>
+                    <td><span style="font-family:'Times New Roman';">Times New Roman</span><br><sapn style="font-family: Georgia;">Georgia</sapn></td>
+                </tr>
+                <tr>
+                    <td>Sans-serif</td>
+                    <td><span style="font-family: Arial;">Arial</span><br><span style="font-family: Verdana;">Verdana</span></td>
+                </tr>
+                <tr>
+                    <td>Monospace</td>
+                    <td><span style="font-family: 'Courier New';">Courier New</span><br><span style="font-family:'Lucida Console';">Lucida Console</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Font size</h2>
+        <p>Esta propiedad la usamos cuando queremos cambiar el tamaño de texto o párrafo.
+            Hay 10 tipos de medida de tamaño de texto, pero con usar dos nos vale.
+            Estos dos son los siguientes:
+            <ul>
+                <li>px: cambiamos el tamaño del texto basándonos en píxeles.</li>
+                <li>em: es como una unidad relativa del tamaño del texto en párrafo.</li>
+            </ul>
+        </p>
+        <h2>Font Style</h2>
+        <p>Usamos esto cuando queremos darle estilo a un texto, por ejemplo cursiva.<br>
+            <span style="text-decoration: underline;">Ejemplo de su uso</span>: cuando en un texto queremos destacar algo sin usar negrita.<br>
+            <span style="text-decoration: underline;">Ejemplo visual</span>: La historiografía tradicional ha denominado a los reyes de la dinastía <br>
+            Habsburgo del siglo XVII como los <span class="italic">Austrias menores</span>, en comparación a los <br>
+            monarcas del siglo XVI: Carlos V y Felipe II a los que se denomina <span class="italic">Austrias mayores</span>.<br>
+            El comando quedará escrito así: <strong>font-style: italic;</strong>
+        </p>
+        <h2>Line height</h2>
+        <p>Sirve para cambiar el interlineado entre renglones en textos cuando el contenido <br>
+            es denso y difícil de leer. Ejemplo: <br>
+            <span class="interlineado">[...] Esta política de fortalecimiento del poder real y de un centralismo que <br>
+                redujera los privilegios, fueros y particularismos tuvo rápida acogida en <br>
+                Castilla, mientras que en Aragón no fue bien acogido lo que provocará el <br>
+                enfrentamiento que se plasmará en la guerra de Sucesión.<br>
+                El comando queda escrito así: <strong>line-height: 20px;</strong>
+            </span>
+        </p>
+        <h2>Text align</h2>
+        <p>Esto sirve para alinear el texto. Se puede alinear en el centro, a la izquierda, <br>
+            a la derecha y justificado. Un ejemplo claro son los poemas que podemos ver en las páginas web.<br>
+            Ejemplo: <br>
+        </p>
+        <p class="alineacion">¿Cómo era, Dios mío, cómo era?<br>
+            ¡Oh corazón falaz, mente indecisa!<br>
+            ¿Era como el paisaje de la brisa?<br>
+            ¿Como la huida de la primavera?
+        </p>
+        <h2>Text decoration</h2>
+        <p>Esto, como su propio nombre indica, sirve para decorar el texto, como subrayar.<br>
+            Ejemplo: España es un <span style="text-decoration: underline;">país</span> miembro de la Unión Europea.
+        </p>
+        <h2>Herencia en CSS</h2>
+        <p>Cuando hablamos de herencia en CSS nos referimos a que algunas propiedades de CSS se heredan, <br>
+            lo que significa que pasan a todas la etiquetas que están debajo. Por ejemplo, 
+            si en la etiqueta body escribimos color: yellow; todo lo que salga en la página estará de color amarillo, <br>
+            pero si luego escribimos en h2 color: blue; los títulos h2 quedarán escritos en azul y el resto en amarillo.
+        </p>
+    </body>
+</html>

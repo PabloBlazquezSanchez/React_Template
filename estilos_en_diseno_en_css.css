@@ -1,0 +1,92 @@
+.span_ejemplo{
+    font-style: italic;
+}
+.ejemplo_div{
+    background-color: rgb(47, 132, 98);
+}
+.ejemplo_overflow{
+    background-color:rgb(74, 87, 150);
+    width: 25%;
+    height: 150px;
+    overflow: auto;
+}
+.modelo_caja{
+    width: 25%;
+    background-color: crimson;
+    height: 175px;
+    overflow: auto;
+    margin: auto;
+    border: 1px groove yellowgreen;
+    padding: 5px;
+}
+#modelo_caja_imagen{
+    border: 1px double green;
+    border-radius: 20px;
+}
+h1{
+    background-color: aqua;
+    text-align: center;
+    border: 5px solid darkolivegreen;
+    padding: 20px;
+    width: 75%;
+    margin: auto;
+    border-radius: 150px;
+}
+#posicion_relativa{
+    position: relative;
+    left: 50px;
+}
+.posicion_absoluta-relativa{
+    border: 3px ridge green;
+    height: 200px;
+    position: relative;
+    left: 100px;
+    width: 70%;
+}
+.posicion_absoluta{
+    position: absolute;
+    right: 50px;
+    bottom: 15px;
+    width: 50%;
+    border: 1px dashed yellow;
+}
+.posicion_fija{
+    position: fixed;
+    border: 5px double red;
+    background-color: lightblue;
+    bottom: 0px;
+    right: 0px;
+}
+.z_index_1{
+    z-index: 1;
+    position: relative;
+    left: 0px;
+}
+.z_index_2{
+    z-index: 2;
+    position: absolute;
+    left: 60px;
+    bottom: 190px;
+}
+#float{
+    border: 1px solid black;
+    width: 50%;
+    overflow: auto;
+    background-color: mediumaquamarine;
+    padding: 10px;
+}
+#float_left{
+    float: left;
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+#clear{
+    border: 1px solid black;
+    width: 50%;
+    padding: 10px;
+    overflow: auto;
+}
+#texto_clear{
+    text-align: justify;
+}
